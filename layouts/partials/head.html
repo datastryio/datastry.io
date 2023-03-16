@@ -4,6 +4,8 @@
 	<title>{{ .Title }}</title>
 	<link href="https://fonts.googleapis.com/css?family={{ .Site.Params.google_fonts }}" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+    <meta name="description" content="{{ .Site.Params.meta_description }}" />
+    <meta name="keywords" content="{{ .Site.Params.meta_keywords }}">
 	<style>
         body {
             background-color: #13738b;
