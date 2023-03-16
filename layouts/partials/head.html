@@ -1,0 +1,62 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ .Title }}</title>
+	<link href="https://fonts.googleapis.com/css?family={{ .Site.Params.google_fonts }}" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+	<style>
+        body {
+            background-color: #13738b;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .social {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .social img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f3726d;
+            font-size: 14px;
+        }
+        .footer span {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .flag {
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            background-image: url('{{ "images/uk-flag.png" | relURL }}');
+            background-size: cover;
+            margin-right: 5px;
+        }
+    </style>    
+</head>

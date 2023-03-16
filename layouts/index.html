@@ -1,0 +1,25 @@
+{{- partial "head" . -}}
+
+<body>
+	<div class="container">
+		<img src="{{ "images/logo.png" | relURL }}" alt="{{ .Title }}" class="logo">
+		<div class="social">
+            <a href="https://github.com/{{ .Site.Params.github_org }}">
+                <img src="{{ "images/github.svg" | relURL }}" alt="Github" style="filter: invert(1)">
+            </a>
+            <a href="https://linkedin.com/{{ .Site.Params.linkedin_profile }}">
+                <img src="{{ "images/linkedin.svg" | relURL }}" alt="LinkedIn" style="filter: invert(1)">
+            </a>
+            <a href="https://twitter.com/{{ .Site.Params.twitter_profile }}">
+                <img src="{{ "images/twitter.svg" | relURL }}" alt="Twitter" style="filter: invert(1)">
+            </a>
+        </div>        
+    </div>
+        
+    <footer class="footer">
+        <span>Made with Artistry in the United Kingdom</span>
+        <span class="flag"></span>
+        <span>|</span>
+        <span>Datastry Ltd. 86-90 Paul Street, London, EC2A 4NE</span>
+    </footer>
+</body>

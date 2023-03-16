@@ -1,0 +1,9 @@
+baseURL = 'https://datastry.io/'
+languageCode = 'en-us'
+title = 'Datastry'
+
+[params]
+  google_fonts = "Open Sans:400,700"
+  linkedin_profile = "company/datastry"
+  twitter_profile = "datastryio"
+  github_org = "datastryio"
